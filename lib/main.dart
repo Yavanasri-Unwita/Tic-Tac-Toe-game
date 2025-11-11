@@ -102,16 +102,13 @@ class _MyAppState extends State<MyApp> {
       title: "Tic tac toe",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // primarySwatch: Colors.blue,
         textTheme: GoogleFonts.emilysCandyTextTheme(),
         scaffoldBackgroundColor: Colors.lightBlue[50],
 
-        // iconTheme: IconThemeData(color: Colors.black),
         appBarTheme: AppBarTheme(backgroundColor: Colors.lightBlue),
       ),
       home: Scaffold(
         appBar: AppBar(
-          // backgroundColor: Colors.lightBlue,
           title: Text("Tic-Tac-Toe"),
         ),
         bottomNavigationBar: Padding(
@@ -121,7 +118,7 @@ class _MyAppState extends State<MyApp> {
             style: const ButtonStyle(
               backgroundColor: WidgetStatePropertyAll(
                 Color.fromARGB(255, 150, 202, 244),
-              ), // Set the desired background color
+              ),
             ),
             onPressed: () {
               resetGame();
