@@ -36,32 +36,16 @@ class _MyAppState extends State<MyApp> {
         values[index] = isTurn ? "X" : "O";
         isTurn = !isTurn;
 
-        if ((values[0] == values[1] &&
-                values[1] == values[2] &&
-                values[0] != "") ||
-            (values[3] == values[4] &&
-                values[4] == values[5] &&
-                values[3] != "") ||
-            (values[6] == values[7] &&
-                values[7] == values[8] &&
-                values[6] != "")) {
+        if ((values[0] == values[1] && values[1] == values[2] && values[0] != "") ||
+            (values[3] == values[4] && values[4] == values[5] && values[3] != "") ||
+            (values[6] == values[7] && values[7] == values[8] && values[6] != "")) {
           result("${values[index]} wins!");
-        } else if ((values[0] == values[3] &&
-                values[3] == values[6] &&
-                values[0] != "") ||
-            (values[1] == values[4] &&
-                values[4] == values[7] &&
-                values[1] != "") ||
-            (values[2] == values[5] &&
-                values[5] == values[8] &&
-                values[2] != "")) {
+        } else if ((values[0] == values[3] &&values[3] == values[6] &&values[0] != "") ||
+            (values[1] == values[4] && values[4] == values[7] && values[1] != "") ||
+            (values[2] == values[5] && values[5] == values[8] && values[2] != "")) {
           result("${values[index]} wins!");
-        } else if ((values[0] == values[4] &&
-                values[4] == values[8] &&
-                values[0] != "") ||
-            (values[2] == values[4] &&
-                values[4] == values[6] &&
-                values[2] != "")) {
+        } else if ((values[0] == values[4] && values[4] == values[8] &&values[0] != "") ||
+            (values[2] == values[4] && values[4] == values[6] && values[2] != "")) {
           result("${values[index]} wins!");
         } else {
           if (!values.contains("")) {
@@ -72,12 +56,6 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  //  result(String message) {
-  //   gameOver = true;
-  //   print("Game Over: $message") ;
-  //   // resetGame();
-  //   return;
-  // }
   result(String message) {
     gameOver = true;
 
@@ -180,7 +158,7 @@ class _MyAppState extends State<MyApp> {
                         color: Colors.lightBlueAccent,
                         blurRadius: 2,
                         spreadRadius: 3,
-                        offset: Offset(3, 0),
+                        offset: Offset(5, 3),
                       ),
                     ],
                     border: Border.all(color: Colors.blue, width: 2),
