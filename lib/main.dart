@@ -130,12 +130,12 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(120.0),
+          padding: const EdgeInsets.all(140.0),
           child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
+              crossAxisSpacing: 15,
+              mainAxisSpacing: 15,
               // childAspectRatio: 1,
             ),
             itemBuilder: (context, index) {
@@ -155,11 +155,11 @@ class _MyAppState extends State<MyApp> {
                         color: Colors.lightBlueAccent,
                         blurRadius: 2,
                         spreadRadius: 3,
-                        offset: Offset(5, 3),
+                        offset: Offset(7, 3),
                       ),
                     ],
                     border: Border.all(color: Colors.blue, width: 2),
-                    borderRadius: BorderRadius.circular(14.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
 
                   child: Center(
