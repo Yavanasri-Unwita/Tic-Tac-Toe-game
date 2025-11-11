@@ -8,7 +8,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.emilysCandyTextTheme(),
-        dialogTheme: DialogThemeData(backgroundColor: Colors.blue),
+        dialogTheme: DialogThemeData(backgroundColor: Colors.lightBlueAccent),
       ),
       home: MyApp(),
     ),
