@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
 
   bool gameOver = false;
 
-  void handleTap(int index) {
+  void check_win(int index) {
     print(index);
    
     setState(() {
@@ -144,7 +144,7 @@ class _MyAppState extends State<MyApp> {
                   // print("yes");
 
                   if (!gameOver) {
-                    handleTap(index);
+                    check_win(index);
                   }
                 },
                 child: Container(
